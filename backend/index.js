@@ -3,7 +3,7 @@ const { hideBin } = require("yargs/helpers");
 
 const { initRepo } = require("./controllers/init");
 const { addRepo } = require("./controllers/add");
-
+const { commitRepo } = require("./controllers/commit");
 
 yargs(hideBin(process.argv))
   .command("init", "Initialise a new repository", {}, initRepo)
